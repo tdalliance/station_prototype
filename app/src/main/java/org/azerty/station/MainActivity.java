@@ -14,9 +14,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     //선언부
-    WebView webview = (WebView) findViewById(R.id.webview);
-    Button button = (Button) findViewById(R.id.button2);
-    EditText edittext = (EditText) findViewById(R.id.editText);
+    WebView webview;
+    Button button;
+    EditText edittext;
 
     String coach;
     private String[] items = {"Google", "Yahoo", "Bing", "DuckDuckGo", "Wikipedia", "Naver"};
@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //초기화
+        webview = findViewById(R.id.webview);
+        button = findViewById(R.id.button2);
+        edittext = findViewById(R.id.editText);
 
         // 웹뷰 속성
         webview.getSettings().setJavaScriptEnabled(true);
