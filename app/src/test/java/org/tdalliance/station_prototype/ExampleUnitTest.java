@@ -1,4 +1,4 @@
-package org.azerty.station;
+package org.tdalliance.station_prototype;
 
 import org.junit.Test;
 
